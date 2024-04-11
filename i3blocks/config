@@ -1,0 +1,32 @@
+# Shows my Volume
+[audio]
+command=echo "🔊 Audio: " $(~/.config/scripts/volume) "%"
+interval=1
+
+# Shows my Storage Usage
+[storage]
+command=echo "💾 Storage: " $(~/.config/scripts/storage)
+interval=1800
+
+# Shows my Ram usage
+[ram]
+command=echo "💽 RAM:" $(~/.config/scripts/ramusage)
+interval=1
+
+# Shows my CPU usage
+[cpu]
+command= echo "🖥️ CPU:" $(~/.config/scripts/cpuusage) "%" 
+interval=1
+
+# Guess the weather hourly
+[weather]
+command=echo "🌥️" $(curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo)
+interval=3600
+color=#A4C2F4
+
+# Query my default IP address only on startup
+
+# Update time every 5 seconds
+[time]
+command=echo  "🕓" $(date +%T)
+interval=1

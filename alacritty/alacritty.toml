@@ -1,0 +1,29 @@
+[window]
+opacity = 0.9
+
+[font]
+size = 12.0
+
+[colors.bright]
+black = "0x343434"
+blue = "0x3b48e3"
+cyan = "0x23edda"
+green = "0x0ed839"
+magenta = "0xf996e2"
+red = "0xe92f2f"
+white = "0xf9f9f9"
+yellow = "0xdddd13"
+
+[colors.normal]
+black = "0x000000"
+blue = "0x3b48e3"
+cyan = "0x23edda"
+green = "0x0ed839"
+magenta = "0xf996e2"
+red = "0xe92f2f"
+white = "0xababab"
+yellow = "0xdddd13"
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xababab"

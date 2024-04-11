@@ -1,0 +1,38 @@
+
+# set imap, smtp and other stuff
+set folder = "imaps://christian.schlegel@systux.xyz@imap.secureserver.net:993"
+set smtp_url = "smtps://christian.schlegel@systux.xyz@smtpout.secureserver.net:465"
+set smtp_pass = "Ilovearchlinux123!"
+set imap_pass = "Ilovearchlinux123!"
+set from = "christian.schlegel@systux.xyz"
+set realname = "Christian Schlegel"
+set editor="/usr/bin/nvim"
+
+# set like filter rules
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+# set the time for sync
+set mail_check = 120
+
+# set the Mailboxes
+mailboxes =INBOX =Sent =Trash =Drafts =Junk =Other 
+
+# enable the Sidebar + check the stats
+set sidebar_visible
+set sidebar_format = "%B%<F? [%F]>%* %<N?%N/>%S"
+set mail_check_stats
+
+# key bindings
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+
+# source of colors 
+source colors.muttrc
+
+
+
